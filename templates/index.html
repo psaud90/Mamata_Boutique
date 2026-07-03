@@ -1,0 +1,267 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero">
+
+    <div class="container text-center text-white">
+
+        <h1 class="display-3 fw-bold">
+            Welcome to Mamata Boutique
+        </h1>
+
+        <p class="lead fs-3">
+            Perfect Stitching for Every Occasion
+        </p>
+
+        <a href="#services" class="btn btn-warning btn-lg px-5">
+            Our Services
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= FOUNDER ================= -->
+
+<section id="about" class="container py-5">
+
+    <div class="row align-items-center">
+
+        <div class="col-md-5 text-center">
+
+            <img
+                src="{{ url_for('static', filename='images/founder/founder.jpg') }}"
+                class="img-fluid rounded shadow founder">
+
+        </div>
+
+        <div class="col-md-7">
+
+            <h2 class="fw-bold">Founder</h2>
+
+            <h3>Mamata Thagunna</h3>
+
+            <p class="text-muted">
+                Founder & Fashion Designer
+            </p>
+
+            <p>
+                📞 9868491245
+            </p>
+
+            <p>
+                📧 mamatathagunna500@gmail.com
+            </p>
+
+            <p>
+                Welcome to Mamata Boutique. We specialize in ladies tailoring,
+                bridal dresses, kurti stitching, blouse stitching,
+                alteration, custom dress design and boutique services.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services" class="container py-5">
+
+    <h2 class="text-center fw-bold mb-5">
+        Our Services
+    </h2>
+
+    <div class="row">
+
+        <div class="col-md-3">
+
+            <div class="card shadow">
+
+                <img
+                    src="{{ url_for('static', filename='images/services/blouse.jpg') }}"
+                    class="card-img-top">
+
+                <div class="card-body text-center">
+
+                    <h5>Blouse Stitching</h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card shadow">
+
+                <img
+                    src="{{ url_for('static', filename='images/services/kurti.jpg') }}"
+                    class="card-img-top">
+
+                <div class="card-body text-center">
+
+                    <h5>Kurti Design</h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card shadow">
+
+                <img
+                    src="{{ url_for('static', filename='images/services/bridal.jpg') }}"
+                    class="card-img-top">
+
+                <div class="card-body text-center">
+
+                    <h5>Bridal Dress</h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card shadow">
+
+                <img
+                    src="{{ url_for('static', filename='images/services/tailoring.jpg') }}"
+                    class="card-img-top">
+
+                <div class="card-body text-center">
+
+                    <h5>Tailoring</h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery" class="container py-5">
+
+    <h2 class="text-center fw-bold mb-5">
+        Gallery
+    </h2>
+
+    <div class="row">
+
+        <div class="col-md-3">
+
+            <img
+                src="{{ url_for('static', filename='images/gallery/gallery1.jpg') }}"
+                class="img-fluid gallery">
+
+        </div>
+
+        <div class="col-md-3">
+
+            <img
+                src="{{ url_for('static', filename='images/gallery/gallery2.jpg') }}"
+                class="img-fluid gallery">
+
+        </div>
+
+        <div class="col-md-3">
+
+            <img
+                src="{{ url_for('static', filename='images/gallery/gallery3.jpg') }}"
+                class="img-fluid gallery">
+
+        </div>
+
+        <div class="col-md-3">
+
+            <img
+                src="{{ url_for('static', filename='images/gallery/gallery4.jpg') }}"
+                class="img-fluid gallery">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="bg-dark text-white py-5">
+
+    <div class="container">
+
+        <h2 class="text-center fw-bold mb-4">
+            Contact Us
+        </h2>
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <h5>Address</h5>
+
+                <p>
+                    📍 Mahendranagar, Kanchanpur, Nepal
+                </p>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h5>Phone</h5>
+
+                <p>
+                    📞 9868491245
+                </p>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h5>Email</h5>
+
+                <p>
+                    📧 mamatathagunna500@gmail.com
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-black text-center text-white p-4">
+
+    <h5>Mamata Boutique</h5>
+
+    <p>
+        Custom Tailoring | Boutique Management System
+    </p>
+
+    <small>
+        © 2026 Mamata Boutique. All Rights Reserved.
+    </small>
+
+</footer>
+
+{% endblock %}
